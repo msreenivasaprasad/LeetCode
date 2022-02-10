@@ -1,7 +1,6 @@
-
-public class App {
+public class AL_Binary_Search {
 	public static void main(String[] args) {
-		int[] nums = { 1, 2, 3, 4, 5 ,9};
+		int[] nums = { 1, 2, 3, 4, 5, 9 };
 		System.out.println(search(nums, 9));
 	}
 
