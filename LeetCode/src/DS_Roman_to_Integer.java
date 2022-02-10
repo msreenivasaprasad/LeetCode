@@ -1,13 +1,14 @@
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class App {
+public class DS_Roman_to_Integer {
 	public static void main(String[] args) {
 		System.out.println(romanToInt("LVIII"));
 	}
 
-	public static  int romanToInt(String s) {
-		
+	public static int romanToInt(String s) {
+
 		Map<Character, Integer> data = new HashMap<Character, Integer>();
 		data.put('I', 1);
 		data.put('V', 5);
@@ -20,17 +21,23 @@ public class App {
 		int res = 0;
 		for (int i = 0; i < c.length; i++) {
 			if (c[i] == 'I' && i + 1 < c.length && c[i + 1] == 'V') {
-				res += 4;i++;
+				res += 4;
+				i++;
 			} else if (c[i] == 'I' && i + 1 < c.length && c[i + 1] == 'X') {
-				res += 9;i++;
+				res += 9;
+				i++;
 			} else if (c[i] == 'X' && i + 1 < c.length && c[i + 1] == 'L') {
-				res += 40;i++;
+				res += 40;
+				i++;
 			} else if (c[i] == 'X' && i + 1 < c.length && c[i + 1] == 'C') {
-				res += 90;i++;
+				res += 90;
+				i++;
 			} else if (c[i] == 'C' && i + 1 < c.length && c[i + 1] == 'D') {
-				res += 400;i++;
+				res += 400;
+				i++;
 			} else if (c[i] == 'C' && i + 1 < c.length && c[i + 1] == 'M') {
-				res += 900;i++;
+				res += 900;
+				i++;
 			} else {
 				res += data.get(c[i]);
 			}
