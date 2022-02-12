@@ -1,19 +1,22 @@
-import java.util.Arrays;
 
 public class AR_Minimum_Cost_of_Buying_Candies_With_Discount {
 	public static void main(String[] args) {
-		int[] cost = { 6, 5, 7, 9, 2, 2 };
-		System.out.println(minimumCost(cost));
+		System.out.println(capitalizeTitle("First leTTeR of EACH Word"));
 	}
 
-	public static int minimumCost(int[] cost) {
-		Arrays.sort(cost);
-		int res = 0;
-		for (int i = cost.length - 1; i >= 0; i--) {
-			if ((cost.length - i) % 3 != 0) {
-				res += cost[i];
+	public static String capitalizeTitle(String title) {
+		String res = new String();
+		String[] words = title.split("\\W+");
+		for (int i = 0; i < words.length; i++) {
+			words[i] = words[i].toLowerCase();
+			if (words[i].length() >= 3) {
+				words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+			}
+			if (i != words.length - 1) {
+				res += words[i] + " ";
 			}
 		}
+		res += words[words.length - 1];
 		return res;
 	}
 }
