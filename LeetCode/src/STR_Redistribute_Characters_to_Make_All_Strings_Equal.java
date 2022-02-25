@@ -1,6 +1,6 @@
 public class STR_Redistribute_Characters_to_Make_All_Strings_Equal {
 	public static void main(String[] args) {
-		String[] words = {};
+		String[] words = { "abc", "aabc", "bc" };
 		System.out.println(makeEqual(words));
 
 	}
