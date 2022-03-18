@@ -1,6 +1,5 @@
 public class AR_Slowest_Key {
 	public static void main(String[] args) {
-		System.out.println("Hello World");
 		int[] num = { 9, 29, 49, 50 };
 		System.out.println(slowestKey(num, "cbcd"));
 	}
