@@ -2,7 +2,6 @@ public class AR_Best_Sightseeing_Pair {
 	public static void main(String[] args) {
 		int[] nums = { 1, 2 };
 		System.out.println(maxScoreSightseeingPair(nums));
-
 	}
 
 	public static int maxScoreSightseeingPair(int[] values) {
