@@ -80,5 +80,4 @@ public class DS_Hand_of_Straights {
 		}
 		return -1;
 	}
-
 }
