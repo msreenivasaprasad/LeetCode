@@ -36,7 +36,6 @@ public class DS_Serialize_and_Deserialize_BST {
 			}
 		}
 		TreeNode t = toTree(nums, 0);
-		System.out.println();
 		return t;
 	}
 
